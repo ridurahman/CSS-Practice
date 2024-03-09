@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 2rem;
+}
+
+p {
+  background-color: lightgray;
+}
+.opposite {
+  display: inline-block;
+  background-color: #333;
+  color: whitesmoke;
+  margin-top: 100px; /* Does not work on inline element, will work is display is inline-block*/
+  padding: 4rem;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0.5rem;
+  text-align: right;
+  background-color: #000;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+  margin-inline: 0.5rem;
+}
+
+li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li a:hover,
+li:focus {
+  text-decoration: underline;
+}

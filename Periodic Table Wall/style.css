@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 100px 300px;
+  font-family: "Roboto", sans-serif;
+  min-height: 800px;
+  font-weight: bold;
+  /* display: grid;
+  grid-template-columns: repeat(18, 1fr); */
+  /* grid-auto-rows: repeat(11, 1fr); */
+  /* grid-template-areas:
+    ". . . . . hd hd hd hd hd hd hd hd . . . . ."
+    "mn mn mn mn mn mn mn mn mn mn mn mn mn mn mn mn mn mn"
+    ". . . ft ft ft ft ft ft ft ft ft ft ft ft . . .";
+  gap: 0.15rem; */
+}
+
+.header {
+  /* grid-area: hd; */
+  height: 70px;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  gap: 0.15rem;
+}
+
+.heading {
+  grid-column: 6/14;
+}
+
+.header .box {
+  background-color: white;
+  justify-content: center;
+  align-content: center;
+}
+
+.series .roman {
+  background-color: white;
+  justify-content: center;
+  align-content: center;
+}
+
+.header .box:nth-child(3) {
+  grid-column: 18/19;
+}
+
+.main {
+  /* grid-area: mn; */
+  margin-top: 0.15rem;
+  row-gap: 0.15rem;
+  /* display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  gap: 0.15rem; */
+}
+/* .series {
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  gap: 0.15rem;
+} */
+.series1 {
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  gap: 0.15rem;
+}
+.series1 .box:nth-child(3) {
+  grid-column: 13/14;
+  /* background-color: white; */
+}
+
+.series2 {
+  margin-top: 0.15rem;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  gap: 0.15rem;
+}
+
+.series2 .box:nth-child(3) {
+  grid-column: 13/14;
+  /* background-color: white; */
+}
+
+.series3 {
+  margin-top: 0.15rem;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  gap: 0.15rem;
+}
+
+.series4 {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 0.5fr repeat(17, 1fr) 0.5fr;
+  gap: 0.15rem;
+}
+
+.series4 .box:nth-child(1),
+.series4 .box:nth-child(17) {
+  grid-column: 2/4;
+  background-color: white;
+  justify-content: center;
+  align-content: center;
+}
+
+.footer {
+  /* grid-area: ft; */
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 3fr repeat(10, 1fr) 3fr;
+  gap: 1rem;
+}
+
+.footer .box:nth-child(1) {
+  grid-column: 2/3;
+}
+
+.box {
+  background-color: rgb(5, 132, 222);
+  min-height: 100px;
+  font-size: 1rem;
+  display: grid;
+  /* align-content: center;  
+    justify-content: center;
+    */
+  place-content: start start; /* place-content: align-content justify-content */
+}
+
+.footer .box {
+  justify-content: center;
+  align-content: center;
+}
+
+.non-metal {
+  background-image: linear-gradient(
+    170deg,
+    hsl(199deg 50% 58%) 10%,
+    /* hsl(200deg 100% 56%) 34%,
+    hsl(203deg 100% 56%) 67%, */
+      hsl(208deg 100% 60%) 100%
+  );
+}
+
+.alkail {
+  background-image: linear-gradient(
+    170deg,
+    hsl(336deg 100% 74%) 10%,
+    /* hsl(332deg 100% 72%) 12%,
+  hsl(327deg 100% 70%) 24%,
+  hsl(323deg 100% 67%) 35%,
+  hsl(319deg 100% 65%) 47%,
+  hsl(315deg 100% 63%) 58%,
+  hsl(311deg 100% 60%) 69%,
+  hsl(307deg 100% 57%) 79%,
+  hsl(303deg 98% 54%) 89%, */
+      hsl(298deg 100% 50%) 100%
+  );
+}
+
+.alkaline {
+  background-image: linear-gradient(
+    170deg,
+    hsl(301deg 100% 63%) 10%,
+    /* hsl(298deg 99% 63%) 12%,
+  hsl(295deg 99% 63%) 24%,
+  hsl(291deg 100% 64%) 35%,
+  hsl(288deg 100% 64%) 47%,
+  hsl(285deg 100% 64%) 58%,
+  hsl(282deg 100% 64%) 69%,
+  hsl(279deg 100% 65%) 79%,
+  hsl(275deg 100% 65%) 89%, */
+      hsl(272deg 100% 65%) 100%
+  );
+}
+
+.transition {
+  background-image: linear-gradient(
+    170deg,
+    hsl(208deg 100% 75%) 10%,
+    /* hsl(206deg 100% 73%) 12%,
+  hsl(204deg 100% 72%) 24%,
+  hsl(202deg 100% 71%) 35%,
+  hsl(201deg 100% 69%) 47%,
+  hsl(199deg 100% 68%) 58%,
+  hsl(198deg 100% 66%) 69%,
+  hsl(196deg 100% 64%) 79%,
+  hsl(195deg 100% 62%) 89%, */
+      hsl(194deg 100% 60%) 100%
+  );
+}
+
+.lanthanide {
+  background-image: linear-gradient(
+    170deg,
+    hsl(86deg 100% 67%) 10%,
+    /* hsl(84deg 100% 66%) 12%,
+  hsl(83deg 100% 65%) 24%,
+  hsl(82deg 100% 64%) 35%,
+  hsl(81deg 100% 62%) 47%,
+  hsl(80deg 100% 61%) 58%,
+  hsl(79deg 100% 59%) 69%,
+  hsl(78deg 100% 57%) 79%,
+  hsl(76deg 100% 55%) 89%, */
+      hsl(74deg 100% 50%) 100%
+  );
+}
+
+.actinide {
+  background-image: linear-gradient(
+    170deg,
+    hsl(328deg 100% 66%) 10%,
+    /* hsl(331deg 100% 64%) 12%,
+  hsl(333deg 100% 61%) 24%,
+  hsl(336deg 100% 58%) 35%,
+  hsl(337deg 100% 55%) 47%,
+  hsl(338deg 100% 50%) 58%,
+  hsl(342deg 100% 50%) 69%,
+  hsl(347deg 100% 50%) 79%,
+  hsl(352deg 100% 50%) 89%, */
+      hsl(0deg 100% 50%) 100%
+  );
+}
+
+.basic {
+  background-image: linear-gradient(
+    170deg,
+    hsl(15deg 100% 57%) 10%,
+    /* hsl(18deg 100% 57%) 12%,
+  hsl(21deg 100% 57%) 24%,
+  hsl(24deg 100% 57%) 35%,
+  hsl(27deg 100% 57%) 47%,
+  hsl(29deg 100% 57%) 58%,
+  hsl(31deg 100% 58%) 69%,
+  hsl(33deg 100% 59%) 79%,
+  hsl(35deg 100% 60%) 89%, */
+      hsl(37deg 100% 61%) 100%
+  );
+}
+
+.semi {
+  background-image: linear-gradient(
+    170deg,
+    hsl(127deg 100% 67%) 10%,
+    /* hsl(129deg 100% 66%) 12%,
+  hsl(130deg 100% 65%) 24%,
+  hsl(132deg 100% 64%) 35%,
+  hsl(134deg 100% 63%) 47%,
+  hsl(136deg 100% 61%) 58%,
+  hsl(138deg 100% 60%) 69%,
+  hsl(140deg 100% 58%) 79%,
+  hsl(143deg 100% 55%) 89%, */
+      hsl(147deg 100% 50%) 100%
+  );
+}
+
+.helogen {
+  background-image: linear-gradient(
+    170deg,
+    hsl(56deg 100% 56%) 10%,
+    /* hsl(55deg 100% 55%) 12%,
+  hsl(54deg 100% 54%) 24%,
+  hsl(53deg 100% 54%) 35%,
+  hsl(52deg 100% 53%) 47%,
+  hsl(51deg 100% 52%) 58%,
+  hsl(50deg 100% 51%) 69%,
+  hsl(49deg 100% 51%) 79%,
+  hsl(48deg 100% 50%) 89%, */
+      hsl(47deg 100% 50%) 100%
+  );
+}
+
+.noble {
+  background-image: linear-gradient(
+    170deg,
+    hsl(40deg 100% 62%) 10%,
+    /* hsl(40deg 100% 61%) 12%,
+  hsl(41deg 100% 60%) 24%,
+  hsl(41deg 100% 59%) 35%,
+  hsl(42deg 100% 59%) 47%,
+  hsl(42deg 100% 57%) 58%,
+  hsl(43deg 100% 56%) 69%,
+  hsl(43deg 100% 55%) 79%,
+  hsl(44deg 100% 53%) 89%, */
+      hsl(45deg 100% 50%) 100%
+  );
+}
